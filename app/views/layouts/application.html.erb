@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PaulPersonalWeb</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <div class='main-wrapper'>
+      <div id='left-layout-column'>
+        <div id='logo'>       
+          <%= link_to(image_tag("logo.png"), root_path ) %>
+        </div>
+        <ul id="nav">
+            <li class="">
+                <%= link_to "About", "#" %>
+            </li>
+            <li class="active">
+                <%= link_to "Projects", "#" %>
+            </li>
+            <li class="">
+                <%= link_to "Write to Me", "#" %>
+            </li>
+        </ul>
+          <div id='announcing'>
+          <h6>
+            Announcing
+          </h6>
+          <div id='cta'>
+            <div class="tip tip-blue">
+                Guess what?  My latest project ToyMetric has officially launched! Check it out here <a href="http://toymetric.com" target="_blank">ToyMetric.com</a>
+            </div>
+          </div>          
+        </div>
+      </div>   
+      <div id='right-layout-column'>
+        <div id="intro-branding">
+        <h1>
+          I build web applications for myself and for others using tools like Ruby on Rails, jQuery, HTML, and CSS.            
+        </h1>
+        <h5>This website is overly <strong>simple</strong>, so if you get lost, just look for <span id="colorful">colorful things</span> or <span id="black">black text</span>.</h5>
+        </div>
+<div id="content">
+    <div id="left-column">
+        <div class="sectioned">
+            <h1>Who are you?</h1>
+            <div class="content-header">
+                <span>Projects</span>
+            </div>
+            <%= image_tag("toy_metric_logo.png", :style => "width:100%;") %>
+            This is exactly what I like to do! This is exactly what I like to do! This is exactly what I like to do! This is exactly what I like to do! This is exactly what I like to do! This is exactly what I like to do! This is exactly what I like to do! 
+            </div>
+              <div class="point">
+              <span class="type">PHOTOS</span> 
+              <div class="verbiage">
+                I've takens some photos of the projects I've done.
+              </div>
+          </div>
+    </div>
+    <div id="right-column">
+    <h1>What do you do?</h1>
+    <h5>I collect antique toys, design web applications, dabble in the stock market and landed on Mars before Curiousity did.  One of those is false.</h5>                 
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div id='footer'>
+      <div class='main-wrapper'>
+        <div id='footer-small-col'></div>
+        <div id='footer-main-col'>
+          <div>
+            Paul Deardorff 
+            <br />
+            No Copyright since a few years ago
+            <br />
+            <a href='http://pauldeardorff.com' target='_blank'>PaulDeardorff.com</a>
+          </div>
+          <div>
+            This is the simplest footer you'll ever see.  
+          </div>
+        </div>
+      </div>
+    </div> 
+</body>
+</html>

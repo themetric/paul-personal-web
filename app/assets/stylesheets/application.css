@@ -1,0 +1,297 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+/* List Fixes */
+
+li, ol  {
+  list-style: none; 
+}
+
+ul {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0; 
+}
+
+html {
+  line-height: 1; 
+}
+
+ol, ul {
+  list-style: none; 
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; 
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; 
+}
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; 
+}
+
+a img {
+  border: none; 
+}
+
+figure, header, menu, nav, section, summary {
+  display: block; 
+}
+
+html, body {
+  height: 100%; 
+}
+
+body {
+  font-family: "pragmatica-web-1", "pragmatica-web-2", helvetica;
+  font-weight: 400;
+  font-variant: normal;
+  margin: 0px auto;
+  padding: 0px;
+  color: #333333;
+  font-size: 13px;
+  line-height: 1.5em;
+  background: white;
+  background-attachment: fixed; 
+}
+
+.main-wrapper {
+  margin: 0 auto;
+  padding: 0 0 0 0;
+  height: 100%;
+  width: 1050px; 
+}
+
+#content {
+  padding-top: 50px; 
+}
+
+#content #left-column, #content #right-column {
+  width: 335px; 
+}
+  
+#content #left-column {
+  float: left; 
+}
+  
+#content #right-column {
+  float: right; 
+}
+
+#left-layout-column {
+  width: 180px;
+  float: left;
+  padding: 50px;
+  padding-right: 0px; 
+}
+  
+#small_col div, #small_col li {
+    text-align: right; 
+}
+
+#right-layout-column {
+  width: 720px;
+  padding: 50px;
+  float: right; 
+}
+
+#announcing {
+  border-top: 1px solid #CCC;
+  border-left: none;   
+  margin: 40px 0;
+  color: #b3b3b3;
+  font-size: 12px; 
+} 
+  
+#announcing h6 {
+    margin-top:0px; 
+    text-transform: uppercase; 
+} 
+
+ul#nav {
+  border-top: 1px solid #CCC;
+  margin-left: 0px; 
+  margin-top: 20px; 
+}
+  ul#nav li.active a {
+    background: #FBFFCE; 
+}
+  ul#nav a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #777777;
+    font-size: 13px; 
+}
+
+    ul#nav a:hover {
+      color: #2a2a2a;
+      background: white; 
+}
+
+h1 {
+  margin: 0 0 0 0;
+  padding: 0 0 3px 0;
+  font-size: 21px;
+  color: #de5d0d;
+  font-family: "facitweb-1", "facitweb-2", helvetica;
+  font-weight: 400;
+  font-variant: normal;
+  line-height: 120%; 
+}
+
+h2 {
+  margin: 0 0 0 0;
+  padding: 0 0 2px 0;
+  font-size: 14px;
+  color: gray;
+  font-family: "facitweb-1", "facitweb-2", helvetica;
+  font-weight: 400;
+  font-variant: normal; 
+}
+
+.sectioned {
+  margin-bottom: 20px; 
+}
+
+#footer {
+  border-top: 1px solid #cccccc;
+  padding: 0 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  clear: both;
+  color: #999999; 
+}
+  
+#footer #footer-small-col {
+    width: 180px;
+    float: left; 
+}
+  
+#footer #footer-main-col {
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    width: 720px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    float: right;
+    text-align:left; 
+}
+
+#intro-branding h1 {
+  font-size: 21px;
+  font-family: "minion-pro-1", "minion-pro-2", serif;
+  font-weight: 200;
+  font-variant: normal;
+  line-height: 135%;
+  margin: 50px 80px 5px 20px;
+  color: #333333;  
+  padding: 20px;
+}
+  
+
+#intro-branding h5 {
+    text-align: center; 
+    color: gray;     
+}
+
+#colorful {
+    color: #9BD7FF;  
+}
+
+#black {
+    color:black; 
+}
+
+.point {
+  margin: 0 0 20px 0;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #cccccc;
+   
+}
+  
+.point .verbiage {
+    padding: 30px 5px 5px 10px;
+    text-align: left;
+    font-family: "minion-pro-1", "minion-pro-2", serif;
+    font-weight: 400;
+    font-variant: normal;
+    font-size: 14px; 
+}
+  
+.point .type {
+    text-transform: uppercase;
+    font-family: "pragmatica-web-1", "pragmatica-web-2", helvetica;
+    font-weight: 200;
+    font-variant: normal;
+    padding: 6px 10px;
+    background: rgba(255, 255, 255, 0.75);
+    position: absolute;
+    color: #666666;
+    font-size: 11px; 
+}
+
+.content-header {
+    margin: 20px 0;
+    position: relative;
+    border-bottom: 1px solid #CCC;
+    clear: both;
+}
+
+.content-header span {
+    background: white;
+    padding: 5px 0 5px 10px;
+    font-size: 11px;
+    color: gray;
+    position: absolute;
+    top: -15px;
+    right: 0px;
+    font-family: "pragmatica-web-1", "pragmatica-web-2", helvetica;
+    font-weight: 200;
+    font-variant: normal;
+    text-transform:uppercase; 
+}
+
+.tip {
+    margin-bottom: 15px; 
+    padding: 10px; 
+    font-size: 12px; 
+    color: #333;       
+    border: 1px solid #CCC; 
+    border-right-color: white; 
+    border-bottom-color: white; 
+}
+
+.tip-blue {
+    background: #9BD7FF;  
+}
+
+.tip-info {
+    background: #FBFFCE;  
+}
+
+.tip-success {
+    background: #E9F4E4;
+}
