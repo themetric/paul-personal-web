@@ -13,16 +13,19 @@
           <%= link_to(image_tag("logo.png"), root_path ) %>
         </div>
         <ul id="nav">
-            <li class="<%= current_path_active(page_path('about')) %>">
-                <%= link_to "Abooout", page_path("about") %>
+            <li class="<%= current_path_active?(root_path) %>">
+                <%= link_to "Home", root_path %>
             </li>
-            <li class="active">
+            <li class="<%= current_path_active?(page_path('about')) %>">
+                <%= link_to "About", page_path("about") %>
+            </li>
+            <li class="<%= current_path_active?(page_path('projects')) %>">
                 <%= link_to "Projects", page_path("projects") %>
             </li>
-            <li class="">
+            <li class="<%= current_path_active?(page_path('resume')) %>">
                 <%= link_to "Resume", page_path("resume") %>
             </li>
-            <li class="">
+            <li class="<%= current_path_active?(page_path('write_me')) %>">
                 <%= link_to "Write to Me", page_path("write_me") %>
             </li>
         </ul>
@@ -37,37 +40,12 @@
           </div>          
         </div>
       </div>   
-      <div id='right-layout-column'>
-        <div id="intro-branding">
-        <h1>
-          I build web applications for myself and for others using tools like Ruby on Rails, jQuery, HTML, and CSS.            
-        </h1>
-        <h5>This website is overly <strong>simple</strong>, so if you get lost, just look for <span id="colorful">colorful things</span> or <span id="black">black text</span>.</h5>
-        </div>
-<div id="content">
-    <div id="left-column">
-        <div class="sectioned">
-            <h1>Who are you?</h1>
-            <div class="content-header">
-                <span>Projects</span>
-            </div>
-            <%= image_tag("toy_metric_logo.png", :style => "width:100%;") %>
-            This is exactly what I like to do! This is exactly what I like to do! This is exactly what I like to do! This is exactly what I like to do! This is exactly what I like to do! This is exactly what I like to do! This is exactly what I like to do! 
-            </div>
-              <div class="point">
-              <span class="type">PHOTOS</span> 
-              <div class="verbiage">
-                I've takens some photos of the projects I've done.
-              </div>
-          </div>
+      <div id='right-layout-column'>        
+        <div id="content"><!-- start content -->  
+           <%= yield %>
+        </div><!-- end content -->
+      </div>
     </div>
-    <div id="right-column">
-    <h1>What do you do?</h1>
-    <h5>I collect antique toys, design web applications, dabble in the stock market and landed on Mars before Curiousity did.  One of those is false.</h5>                 
-    </div>
-</div>
-</div>
-</div>
 </div>
 <div id='footer'>
       <div class='main-wrapper'>

@@ -1,6 +1,6 @@
-module StaticHelper
+module PagesHelper
 
-    current_path_active?(url)
+    def current_path_active?(url)
         current_page?(url) ? "active" : ""
     end 
 end
