@@ -1,6 +1,6 @@
 PaulPersonalWeb::Application.routes.draw do
 
-  resources :pages
+  #resources :pages
 
   root :to => "pages#home"
 
