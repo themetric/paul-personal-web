@@ -66,6 +66,7 @@ GEM
       rubyzip
     heroku-api (0.3.4)
       excon (~> 0.16.1)
+    high_voltage (1.2.0)
     hike (1.2.1)
     i18n (0.6.0)
     journey (1.0.4)
@@ -183,6 +184,7 @@ DEPENDENCIES
   devise
   factory_girl_rails
   heroku
+  high_voltage
   jquery-rails
   paperclip (~> 3.0)
   pg
