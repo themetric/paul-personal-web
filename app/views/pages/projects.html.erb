@@ -1,0 +1,17 @@
+<legend>
+Projects
+</legend>
+<% Project.order("start_date DESC").each do |project| %> 
+<h3 style="margin-bottom: 0px; padding-bottom: 0px;"><%= project.title %></h3>
+<strong><%= project.position %></strong>, started project <%= project.start_date.strftime('%B, %Y') %> (<%= link_to "Visit Site", project.url %>)
+<br><br>
+<div class="row-fluid">
+    <div class="span3">    
+        <%= image_tag project.image_filename %>
+    </div>
+    <div class="span9">
+        <%= project.description %>
+    </div> 
+</div>
+<hr/>
+<% end %> 
